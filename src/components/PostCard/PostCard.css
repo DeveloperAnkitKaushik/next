@@ -1,0 +1,43 @@
+.postcard {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.post-img {
+    display: flex;
+}
+
+.post-img-container {
+    width: 90%;
+    height: 400px;
+    position: relative;
+}
+
+.post-img-date {
+    font-size: 12px;
+    transform: rotate(270deg);
+    margin: auto;
+}
+
+.post-text-heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.post-text {
+    width: 90%;
+}
+
+.post-text-link {
+    /* text-decoration: none; */
+    color: var(--text);
+    font-weight: bold;
+}
+
+.post-text-para {
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+}

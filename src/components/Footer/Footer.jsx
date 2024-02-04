@@ -1,6 +1,11 @@
+import Image from "next/image";
+import "./Footer.css";
+
 const Footer = () => {
-    return(
-        <div className="">Footer Page</div>
+    return (
+        <div className="footer">
+            <p className="footer-text">Lorem ipsum dolor sit amet.</p>
+        </div>
     );
 }
 

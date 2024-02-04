@@ -4,10 +4,12 @@
     /* background-color: blueviolet; */
     padding: 2rem 0;
     align-items: center;
+    margin-bottom: 3rem;
 }
 
-.nav-logo {
-    font-size: 1.5rem;
+.nav-logo-img {
+    width: 10rem;
+    height: 10rem;
 }
 
 .nav-links {
@@ -50,11 +52,12 @@
     }
 
     .nav-links-mobile {
+        z-index: 1000;
         position: absolute;
-        bottom: 0;
+        top: 00px;
         right: 0;
         width: 50%;
-        height: calc(100vh - 100px);
+        height: calc(100vh);
         background-color: black;
         display: flex;
         flex-direction: column;
@@ -62,10 +65,12 @@
         justify-content: center;
         gap: 1rem;
         overflow: hidden;
-        transition: all 0.5s ease-in-out;
+        transition: height 0.5s ease-in-out;
     }
 
     .nav-link-hamburger {
         display: block;
+        position: relative;
+        z-index: 1001;
     }
 }

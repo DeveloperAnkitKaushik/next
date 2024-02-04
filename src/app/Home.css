@@ -1,0 +1,83 @@
+.home-page {
+    display: flex;
+    gap: 2rem;
+}
+
+.home-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    line-height: 5rem;
+}
+
+.home-text-heading {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.home-text-para {
+    font-size: 1rem;
+    line-height: 1rem;
+    margin: 2rem 0;
+}
+
+.home-text-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.button {
+    padding: 1rem 2rem;
+    min-width: 120px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.home-text-button1 {
+    background-color: var(--btn);
+    color: var(--text);
+}
+
+.home-text-button2 {
+    background-color: white;
+    color: var(--bg);
+}
+
+.home-text-brands {
+    width: 500px;
+    height: 50px;
+    position: relative;
+    filter: grayscale(100%);
+    margin-top: 1rem;
+}
+
+.home-img {
+    flex: 1;
+    position: relative;
+}
+
+.home-img:first-child {
+    object-fit: contain;
+}
+
+@media(max-width: 768px) {
+    .home-img {
+        display: none;
+        flex-direction: column;
+    }
+
+    .home-page {
+        text-align: center;
+    }
+
+    .home-text {
+        overflow: hidden;
+        gap: 2rem;
+    }
+
+    .home-text-buttons {
+        justify-content: center;
+    }
+}

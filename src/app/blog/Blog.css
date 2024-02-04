@@ -1,0 +1,22 @@
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.blog-container-post {
+    width: 30%;
+}
+
+@media(max-width: 1280px) {
+    .blog-container-post {
+        width: 50%;
+    }
+}
+
+@media(max-width: 768px) {
+    .blog-container-post {
+        width: 100%;
+    }
+}

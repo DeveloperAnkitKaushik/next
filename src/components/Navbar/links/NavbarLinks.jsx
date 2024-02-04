@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import NavLinks from "./NavLinks/NavLinks";
 import Navbar from "../Navbar";
 import { useState } from "react";
+import Image from "next/image";
 
 const Links = () => {
     const [menu, setMenu] = useState(false);
@@ -50,7 +51,7 @@ const Links = () => {
                     )
                 }
             </div>
-            <button onClick={() => setMenu(!menu)} className="nav-link-hamburger">menu</button>
+            <Image src="/menu.png" width={30} height={30} onClick={() => setMenu(!menu)} className="nav-link-hamburger"/>
             {
                 menu && (
                     <div className="nav-links-mobile">
